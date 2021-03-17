@@ -74,7 +74,7 @@ def train(opts):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--data_path', type=str, default='./../../../../data2/xpf/datasets')
+    parser.add_argument('--data_path', type=str, default='./datasets')
     parser.add_argument('--weight_path', type=str, default='./weights')
     parser.add_argument('--dataset', type=str, default='cifar10', choices=['cifar10', 'cifar100'])
     parser.add_argument('--model_name', type=str, default='vgg13_bn')
