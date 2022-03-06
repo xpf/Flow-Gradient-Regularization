@@ -1,4 +1,4 @@
-### Flow-Gradient-Regularization
+### Flow-Gradient-Regularization (PyTorch)
 ---
 
 <div align=center> <img src="./figures/cifar10_vgg11.png"/> </div>
@@ -7,6 +7,11 @@
 
 Pengfei Xia and Bin Li, *Neurocomputing*  
 
-#### Requirements
+#### Training
 ---
 
+#### Evaluating
+---
+
+#### Citation
+---
