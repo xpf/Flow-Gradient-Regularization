@@ -15,7 +15,7 @@ def evaluate(opts):
     DSET = DATASETTINGS[opts.data_name]
 
     model = build_model(opts.model_name, DSET['num_classes']).to(opts.device).eval()
-    model.load_state_dict(torch.load(os.path.join(opts.weight_path, '{}.pt'.format(name))))
+    model.load_state_dict(torch.load(os.path.join(opts.weight_path, '{}.pt'.format(name)), map_location=opts.device))
     val_transform = build_transform(False, DSET['img_size'], DSET['crop_pad'], DSET['flip'])
     val_data = build_data(opts.data_name, opts.data_path, False, val_transform)
     val_loader = DataLoader(val_data, DSET['batch_size'], shuffle=False, num_workers=2)
