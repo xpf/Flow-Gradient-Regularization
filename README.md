@@ -14,10 +14,10 @@ Pengfei Xia and Bin Li, *Neurocomputing*
 
 ```python
 # Train VGG-11 on CIFAR-10 without FGR
-python main.py --device cuda:0 --data_path /data --data_name cifar10 --model_name vgg11 --fgr_lamb 0
+python main.py --data_path your_path --data_name cifar10 --model_name vgg11 --fgr_lamb 0
 
 # Train VGG-11 on CIFAR-10 with FGR and lambda set to 300
-python main.py --device cuda:0 --data_path /data --data_name cifar10 --model_name vgg11 --fgr_lamb 300
+python main.py --data_path your_path --data_name cifar10 --model_name vgg11 --fgr_lamb 300
 ```
 
 #### Evaluating
@@ -25,10 +25,10 @@ python main.py --device cuda:0 --data_path /data --data_name cifar10 --model_nam
 
 ```python
 # Evaluate VGG-11 trained on CIFAR-10 without FGR
-python evaluate.py --device cuda:0 --data_path /data --data_name cifar10 --model_name vgg11 --fgr_lamb 0
+python evaluate.py --data_path your_path --data_name cifar10 --model_name vgg11 --fgr_lamb 0
 
 # Evaluate VGG-11 trained on CIFAR-10 with FGR and lambda set to 300
-python evaluate.py --device cuda:0 --data_path /data --data_name cifar10 --model_name vgg11 --fgr_lamb 300
+python evaluate.py --data_path your_path --data_name cifar10 --model_name vgg11 --fgr_lamb 300
 ```
 
 #### Citation
