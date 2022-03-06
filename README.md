@@ -1,5 +1,4 @@
-### Flow-Gradient-Regularization (PyTorch)
----
+# Flow-Gradient-Regularization (PyTorch)
 
 <div align=center> <img src="./figures/cifar10_vgg11.png"/> </div>
 
@@ -9,8 +8,7 @@ Pengfei Xia and Bin Li, *Neurocomputing*
 
 >Abstract: *Improving the resistance of deep neural networks against adversarial attacks is important for deploying models in realistic applications. Nowadays, most defense methods are designed to resist intensity perturbations, and location perturbations have not yet attracted enough attention. However, these two types should be equally important for deep model security. In this paper, we focus on adversarial deformations, a typical class of location perturbations, and propose a defense method named flow gradient regularization to improve the resistance of models against such attacks. By theoretical analysis, we prove that regularizing flow gradients is able to get a tighter bound than regularizing input gradients. Through verifying over multiple datasets, network architectures, and adversarial deformations, our empirical results indicate that training with flow gradients performs better than training with input gradients by a large margin, and also better than adversarial training. Moreover, the proposed method can be used to combine with adversarial deformation training to improve the resistance further.*
 
-#### Training
----
+## Training
 
 ```python
 # Train VGG-11 on CIFAR-10 without FGR
@@ -20,8 +18,7 @@ python main.py --data_path your_path --data_name cifar10 --model_name vgg11 --fg
 python main.py --data_path your_path --data_name cifar10 --model_name vgg11 --fgr_lamb 300
 ```
 
-#### Evaluating
----
+## Evaluating
 
 ```python
 # Evaluate VGG-11 trained on CIFAR-10 without FGR
@@ -31,8 +28,7 @@ python evaluate.py --data_path your_path --data_name cifar10 --model_name vgg11 
 python evaluate.py --data_path your_path --data_name cifar10 --model_name vgg11 --fgr_lamb 300
 ```
 
-#### Citation
----
+## Citation
 
 If you find this work useful for your research, please cite our paper:
 
