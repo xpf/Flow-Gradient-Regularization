@@ -34,7 +34,7 @@ If you find this work useful for your research, please cite our paper:
 
 ```
 @article{xia2021improving,
-  title={Improving resistance to adversarial deformations by regularizing gradients},
+  title={Improving Resistance to Adversarial Deformations by Regularizing Gradients},
   author={Xia, Pengfei and Li, Bin},
   journal={Neurocomputing},
   volume={455},
