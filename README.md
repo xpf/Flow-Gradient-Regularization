@@ -30,7 +30,7 @@ python evaluate.py --data_path your_path --data_name cifar10 --model_name vgg11 
 
 ## Citation
 
-If you find this work useful for your research, please cite our paper:
+If you find this work useful for your research, please consider citing our paper:
 
 ```
 @article{xia2021improving,
